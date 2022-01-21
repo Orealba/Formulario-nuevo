@@ -71,9 +71,9 @@ cvc.addEventListener("focusout", e => {
   }
 });
 
-const myForm = document.getElementById("myForm");
+const myform = document.getElementById("myform");
 
-myForm.addEventListener("submit", e => {
+myform.addEventListener("submit", e => {
   e.preventDefault();
   console.log("enviado");
 });
