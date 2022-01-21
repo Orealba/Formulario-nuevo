@@ -9,30 +9,123 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="container-fluid"></div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>Payment from example</h1>
-      </div>
-      <div class="row">
-      <div class="col-xl-7">
-        <div class="form-group">
-          <label for="validationCustom01">Card#</label>
-          <input
-            type="number"
-            class="form-control"
-            id="validationCustom01"
-            placeholder="Enter card"
-           
-          />
+    <div class="container-fluid">
+      <div class="general">
+        <div class="row titulo">
+          <div class="col-lg-12">
+            <h1>Payment from example</h1>
+          </div>
+
+          <div class="row general">
+            <div class="row primeralinea">
+              <div class="col-xl-3">
+                <label for="barra1">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="barra1"
+                  placeholder="Enter the name"
+                />
+              </div>
+              <div class="row">
+                <div class="col-xl-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="form-group">
+                    <label for="barra2">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="barra2"
+                      placeholder="Enter the last name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-1"></div>
+                <div class="row">
+                  <div class="col-xl-3">
+                    <div class="form-group">
+                      <label for="barra3">Phone Number</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="barra3"
+                        placeholder="Enter the phone number"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2da línea-->
+
+            <div class="row segundalinea">
+              <div class="col-xl-3">
+                <label for="barra1">Card number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="barra1"
+                  placeholder="Enter the Card number"
+                />
+              </div>
+              <div class="row">
+                <div class="col-xl-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="form-group">
+                    <label for="barra2">Expiration date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="barra2"
+                      placeholder="Enter expiration date"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-1"></div>
+                <div class="row">
+                  <div class="col-xl-3">
+                    <div class="form-group">
+                      <label for="barra3">CVC#</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="barra3"
+                        placeholder="Enter CVC"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row colorrowButtons">
+              <div class="footerbutton">
+                <div class="col-xl-12">
+                  <button type="submit" class="btn btn-primary lastbutton">
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary lastbutton">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <script src="./app.js"></script>
   </body>
 </html>
