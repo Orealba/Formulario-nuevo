@@ -51,3 +51,11 @@ body {
   margin-right: -200px;
   padding-bottom: 50px;
 }
+
+.isvalid {
+  border: 2px solid green;
+}
+
+.isinvalid {
+  border: 2px solid red;
+}
