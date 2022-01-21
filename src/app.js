@@ -9,9 +9,8 @@ const phonenumber = document.querySelector("#phonenumber");
 const cardnumber = document.querySelector("#cardnumber");
 const expirationdate = document.querySelector("#expirationdate");
 const cvc = document.querySelector("#cvc");
-const buttonsubmit = document.querySelector("#buttonsubmit");
 const inputs = document.querySelector("#inputs");
-const numbers = /\d/;
+const onlynumbers = /\d/;
 
 name.addEventListener("focusout", e => {
   if (name.value.match(onlyletters)) {
@@ -34,7 +33,7 @@ lastname.addEventListener("focusout", e => {
 });
 
 phonenumber.addEventListener("focusout", e => {
-  if (phonenumber.value.match(onlyletters)) {
+  if (phonenumber.value.match(onlynumbers)) {
     phonenumber.classList.remove("isinvalid");
     phonenumber.classList.add("isvalid");
   } else {
@@ -44,7 +43,7 @@ phonenumber.addEventListener("focusout", e => {
 });
 
 cardnumber.addEventListener("focusout", e => {
-  if (cardnumber.value.match(numbers)) {
+  if (cardnumber.value.match(onlynumbers)) {
     cardnumber.classList.remove("isinvalid");
     cardnumber.classList.add("isvalid");
   } else {
@@ -53,7 +52,7 @@ cardnumber.addEventListener("focusout", e => {
   }
 });
 expirationdate.addEventListener("focusout", e => {
-  if (expirationdate.value.match(onlyletters)) {
+  if (expirationdate.value.match(onlynumbers)) {
     expirationdate.classList.remove("isinvalid");
     expirationdate.classList.add("isvalid");
   } else {
@@ -63,7 +62,7 @@ expirationdate.addEventListener("focusout", e => {
 });
 
 cvc.addEventListener("focusout", e => {
-  if (cvc.value.match(onlyletters)) {
+  if (cvc.value.match(onlynumbers)) {
     cvc.classList.remove("isinvalid");
     cvc.classList.add("isvalid");
   } else {
@@ -72,12 +71,9 @@ cvc.addEventListener("focusout", e => {
   }
 });
 
-buttonsubmit.addEventListener("focusout", e => {
-  if (buttonsubmit.value.match(onlyletters)) {
-    buttonsubmit.classList.remove("isinvalid");
-    buttonsubmit.classList.add("isvalid");
-  } else {
-    buttonsubmit.classList.remove("isvalid");
-    buttonsubmit.classList.add("isinvalid");
-  }
+const myForm = document.getElementById("myForm");
+
+myForm.addEventListener("submit", e => {
+  e.preventDefault();
+  console.log("enviado");
 });
