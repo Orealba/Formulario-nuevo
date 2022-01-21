@@ -1,11 +1,16 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+function comprobar() {
+  var nombre = document.formu.nombre.value;
+  var edad = document.formu.edad.value;
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+  if (nombre.length > 30) {
+    alert("Tu nombre es demasiado grande. Redúcelo.");
+    return false;
+  }
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  if (edad >= 20 && edad <= 40) {
+    alert("Si tienes entre 20 y 40 años, no puedes usar este programa.");
+    return false;
+  }
+
+  return true;
+}

@@ -1,1 +1,8 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: grey;
+  text-align: center;
+}
+.container-fluid {
+  text-align: center;
+  background: grey;
+}
