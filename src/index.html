@@ -16,114 +16,83 @@
     <div class="container-fluid">
       <div class="general">
         <form id="myform">
-          <div class="row titulo">
-            <div class="">
-              <h1>Payment from example</h1>
+          <div class="">
+            <h1>Payment from example</h1>
+          </div>
+          <div class="primeralinea">
+            <div class="columnas">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter the name"
+              />
             </div>
 
-            <div class="row general">
-              <div class="row primeralinea">
-                <div class="col-xl-3">
-                  <label for="name">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Enter the name"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col-xl-1"></div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-4">
-                    <div class="form-group">
-                      <label for="lastname">Last Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="lastname"
-                        placeholder="Enter the last name"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-1"></div>
-                  <div class="row">
-                    <div class="col-xl-3">
-                      <div class="form-group">
-                        <label for="phonenumber">Phone Number</label>
-                        <input
-                          type="number"
-                          class="form-control"
-                          id="phonenumber"
-                          placeholder="Enter the phone number"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="columnas">
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                placeholder="Enter the last name"
+              />
+            </div>
 
-              <!-- 2da línea-->
+            <div class="columnas">
+              <label for="phonenumber">Phone Number</label>
+              <input
+                type="number"
+                class="form-control"
+                id="phonenumber"
+                placeholder="Enter the phone number"
+              />
+            </div>
+          </div>
 
-              <div class="row segundalinea">
-                <div class="col-xl-3">
-                  <label for="cardnumber">Card number</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="cardnumber"
-                    placeholder="Enter the Card number"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col-xl-1"></div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-4">
-                    <div class="form-group">
-                      <label for="expirationdate">Expiration date</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="expirationdate"
-                        placeholder="Enter expiration date"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-1"></div>
-                  <div class="row">
-                    <div class="col-xl-3">
-                      <div class="form-group">
-                        <label for="cvc">CVC#</label>
-                        <input
-                          type="number"
-                          class="form-control"
-                          id="cvc"
-                          placeholder="Enter CVC"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row colorrowButtons">
-                <div class="footerbutton">
-                  <div class="col-xl-12">
-                    <button class="btn btn-primary lastbutton">
-                      Cancel
-                    </button>
+          <!-- 2da línea-->
 
-                    <button type="submit" class="btn btn-primary lastbutton">
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div class="segundalinea">
+            <div class="columnas">
+              <label for="cardnumber">Card number</label>
+              <input
+                type="number"
+                class="form-control"
+                id="cardnumber"
+                placeholder="Enter the Card number"
+              />
+            </div>
+
+            <div class="columnas">
+              <label for="expirationdate">Expiration date</label>
+              <input
+                type="text"
+                class="form-control"
+                id="expirationdate"
+                placeholder="Enter expiration date"
+              />
+            </div>
+
+            <div class="columnas">
+              <label for="cvc">CVC#</label>
+              <input
+                type="number"
+                class="form-control"
+                id="cvc"
+                placeholder="Enter CVC"
+              />
+            </div>
+          </div>
+          <div class="colorrowButtons">
+            <div class="footerbutton">
+              <button class="btn btn-primary lastbutton">
+                Cancel
+              </button>
+
+              <button type="submit" class="btn btn-primary lastbutton">
+                Send
+              </button>
             </div>
           </div>
         </form>
