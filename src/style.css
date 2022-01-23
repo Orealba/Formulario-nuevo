@@ -4,7 +4,7 @@ body {
 
 .titulo {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 1%;
 }
 
 .container-fluid {
@@ -17,24 +17,23 @@ body {
 .general {
   text-align: center;
   background: white;
-  margin-left: 300px;
-  margin-right: 500px;
-  margin-bottom: 400px;
-  margin-top: 100px;
+  margin-left: 20%;
+  margin-right: 30%;
+  margin-bottom: 40%px;
+  margin-top: 10%;
   align-items: center;
 }
 
 .primeralinea {
   text-align: center;
   display: flex;
-  padding-bottom: 30px;
-  margin-top: -50px;
+  padding-bottom: 5%;
 }
 
 .segundalinea {
   text-align: center;
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 5%;
 }
 
 .terceralinea {
@@ -43,13 +42,13 @@ body {
 }
 
 .container-fluid {
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 .footerbutton {
   align-items: center;
-  margin-right: -200px;
-  padding-bottom: 50px;
+  margin-right: 10%;
+  padding-bottom: 15%;
 }
 
 .isvalid {
